@@ -1,0 +1,34 @@
+@use "sass:map";
+@use "variables" as var;
+
+/* Variables */
+
+$footerBgColor: rgb(235, 235, 235); 
+$colorSocial: gray;
+$footerBorder: inset 0px 2px 3px 1px rgb(216, 216, 216);
+$footHeight: 80px;
+
+/* Stile del footer */
+footer {
+    box-sizing: border-box;
+    box-shadow: $footerBorder;
+    height: $footHeight;
+    background-color: $footerBgColor;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.social {
+    color: $colorSocial;
+    width: 80px;
+    text-align: center;
+}
+div.social i {
+    cursor: pointer;
+}
+/* Rimossi stili all'elemento a */
+a {
+    text-decoration: none;
+    color: inherit;
+}

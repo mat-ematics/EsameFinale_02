@@ -1,0 +1,347 @@
+{
+    "header" : {
+        "logo" : { 
+            "image" : "C.devs",
+            "link" : "http://accademia.localhost/Sessione 2 - Web Master Jr/Esame Finale/index.php"
+            },
+        "navbar" : {
+            "Home": "http://accademia.localhost/Sessione 2 - Web Master Jr/Esame Finale/index.php",
+            "Services": "http://accademia.localhost/Sessione 2 - Web Master Jr/Esame Finale/services.php",
+            "Projects": "http://accademia.localhost/Sessione 2 - Web Master Jr/Esame Finale/projects.php",
+            "About": "http://accademia.localhost/Sessione 2 - Web Master Jr/Esame Finale/about.php",
+            "Contact Me": "http://accademia.localhost/Sessione 2 - Web Master Jr/Esame Finale/contacts.php"
+        }
+    },
+
+    "footer": {
+        "icon_style": "fa-2x",
+        "socials": {
+            "instagram": {
+                "link": "https://www.instagram.com",
+                "icon": "instagram"
+            },
+            "facebook": {
+                "link": "https://www.facebook.com",
+                "icon": "facebook"
+            },
+            "youtube": {
+                "link": "https://www.youtube.com",
+                "icon": "youtube"
+            },
+            "linkedin": {
+                "link": "https://www.linkedin.com",
+                "icon": "linkedin"
+            },
+            "twitter": {
+                "link": "https://www.twitter.com",
+                "icon": "twitter"
+            }
+        }
+    },
+
+    "index" : {
+        "page_title" : "Home",
+        "style_sheet": "index.min.css",
+        "main" : {
+            "title": [
+                "I'm Cringy,",
+                "a Coder"
+            ],
+            "subtitle": [
+                "Professional keyboard head-smasher"
+            ],
+            "logo": {
+                "image": "C.devs",
+                "id": "logo"
+            },
+            "button_down": {
+                "location": "#workSection",
+                "content": {
+                    "text": "Works",
+                    "icon": {
+                        "symbol": "fa-arrow-down",
+                        "style": "fa-solid"
+                    }
+                }
+            }
+        },
+        "work_section": {
+            "section_title": "Recent Projects",
+            "cards": {
+                "card_1": {
+                    "card_title": "Title",
+                    "card_description": "Description",
+                    "card_image": {
+                        "link": "images/grey.jpg",
+                        "alt_text": "Image of the Project"
+                    }
+                },
+                "card_2": {
+                    "card_title": "Title",
+                    "card_description": "Description",
+                    "card_image": {
+                        "link": "images/grey.jpg",
+                        "alt_text": "Image of the Project"
+                    }
+                },
+                "card_3": {
+                    "card_title": "Title",
+                    "card_description": "Description",
+                    "card_image": {
+                        "link": "images/grey.jpg",
+                        "alt_text": "Image of the Project"
+                    }
+                },
+                "card_4": {
+                    "card_title": "Title",
+                    "card_description": "Description",
+                    "card_image": {
+                        "link": "images/grey.jpg",
+                        "alt_text": "Image of the Project"
+                    }
+                }
+            }
+        }
+    },
+
+    "projects": {
+        "page_title": "Projects",
+        "style_sheet": "projects.min.css",
+        "bubbles": 20,
+        "project_list": {
+            "project_1": {
+                "image": {
+                    "link": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210401151214/What-is-Website.png",
+                    "alt_text": "Image of the Project"
+                },
+                "project_page": "single_work.php",
+                "project_title": "Project Title",
+                "project_description": "Incididunt ea sint occaecat reprehenderit do in officia pariatur enim. Ex aute do eu id velit pariatur velit reprehenderit incididunt irure elit occaecat veniam. Duis commodo esse in consectetur duis pariatur aliqua dolor irure reprehenderit laboris commodo. Irure occaecat culpa anim sit magna deserunt anim sunt velit."
+            },
+            "project_2": {
+                "image": {
+                    "link": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210401151214/What-is-Website.png",
+                    "alt_text": "Image of the Project"
+                },
+                "project_page": "single_work.php",
+                "project_title": "Project Title",
+                "project_description": "Incididunt ea sint occaecat reprehenderit do in officia pariatur enim. Ex aute do eu id velit pariatur velit reprehenderit incididunt irure elit occaecat veniam. Duis commodo esse in consectetur duis pariatur aliqua dolor irure reprehenderit laboris commodo. Irure occaecat culpa anim sit magna deserunt anim sunt velit."
+            },
+            "project_3": {
+                "image": {
+                    "link": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210401151214/What-is-Website.png",
+                    "alt_text": "Image of the Project"
+                },
+                "project_page": "single_work.php",
+                "project_title": "Project Title",
+                "project_description": "Incididunt ea sint occaecat reprehenderit do in officia pariatur enim. Ex aute do eu id velit pariatur velit reprehenderit incididunt irure elit occaecat veniam. Duis commodo esse in consectetur duis pariatur aliqua dolor irure reprehenderit laboris commodo. Irure occaecat culpa anim sit magna deserunt anim sunt velit."
+            },
+            "project_4": {
+                "image": {
+                    "link": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210401151214/What-is-Website.png",
+                    "alt_text": "Image of the Project"
+                },
+                "project_page": "single_work.php",
+                "project_title": "Project Title",
+                "project_description": "Incididunt ea sint occaecat reprehenderit do in officia pariatur enim. Ex aute do eu id velit pariatur velit reprehenderit incididunt irure elit occaecat veniam. Duis commodo esse in consectetur duis pariatur aliqua dolor irure reprehenderit laboris commodo. Irure occaecat culpa anim sit magna deserunt anim sunt velit."
+            }
+        }
+    },
+
+    "single_work": {
+        "page_title": "Single Work",
+        "style_sheet": "single_project.min.css",
+        "project_title": "Project",
+        "image": {
+            "link": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210401151214/What-is-Website.png",
+            "alt_text":"Image of the Project"
+        },
+        "project_description": "Voluptate id nisi cupidatat esse dolor culpa est ut proident incididunt. Culpa nostrud cupidatat eu ea id aliqua aliqua commodo quis cupidatat enim Lorem. Duis quis id est veniam ea nostrud ipsum aliqua aliqua amet velit. Laboris eu sunt reprehenderit officia velit deserunt sint cupidatat. Reprehenderit in aliqua adipisicing pariatur aute in aliqua pariatur ipsum elit pariatur ex ad. Aliqua sunt fugiat veniam labore.",
+        "langs": "Javascript, Ruby",
+        "project_date": "20/04/2024"
+    },
+
+    "services": {
+        "page_title": "Services",
+        "style_sheet": "services.min.css",
+        "bubbles": {
+            "front_end": {
+                "title": "Front-End",
+                "description": "Designing your Dreams into an Interactable and Responsive Reality"
+            },
+            "back_end": {
+                "title": "Back-End",
+                "description": "Powering your Applications with efficient Data Management"
+            }
+        }
+    },
+
+    "contacts": {
+        "page_title": "Contact Me",
+        "style_sheet": "contacts.min.css",
+        "action": "response_contacts.php",
+        "title": "Contact Me",
+        "name": {
+            "label": "Insert Name:",
+            "first_name": {
+                "placeholder": "Name",
+                "pattern": ".{1,25}",
+                "title": "Name must be at most 25 characters",
+                "max_length": "25",
+                "min_length": "1",
+                "error_message": "Name must be composed of only, at most 25, letters and whitespaces"
+            },
+            "last_name": {
+                "placeholder": "Name",
+                "pattern": ".{1,25}",
+                "title": "Name must be at most 25 characters",
+                "max_length": "25",
+                "min_length": "1",
+                "error_message": "Surname must be composed of only, at most 25, letters and whitespaces"
+
+            }
+        },
+        "email": {
+            "label": "E-mail address:",
+            "placeholder": "example@email.com",
+            "pattern": "[a-z0-9._%+\\-]+@[a-z0-9.\\-]+\\.[a-z]{2,}$",
+            "title": "E-mail must be between 10 and 40 characters",
+            "error_message": "E-mail is incorrect"
+        },
+        "phone_number": {
+            "label": "Phone Number:",
+            "placeholder": "+00 000 000 0000",
+            "pattern": "(\\+\\d{1,3} )?\\d{3} \\d{3} \\d{4}",
+            "title": "Phone number doesn't fit the pattern (prefix can be excluded)",
+            "error_message": "Phone number must be in the format (+00) 123 456 7890"
+        },
+        "subject": {
+            "label": "Subject",
+            "error_message": "Select a valid option",
+            "options": {
+                "option_1": {
+                    "name": "Generic",
+                    "value": "generico"
+                },
+                "option_2": {
+                    "name": "Product",
+                    "value": "prodotto"
+                },
+                "option_3": {
+                    "name": "Support",
+                    "value": "supporto"
+                }
+            }
+        },
+        "object": {
+            "label": "Object of the Message",
+            "placeholder": "Object",
+            "pattern": ".{4,100}",
+            "min_length": 4,
+            "max_length": 100,
+            "error_message": "Object must be between 4 and 100 letters or whitespaces"
+        },
+        "message": {
+            "label": "Message:",
+            "placeholder": "Write here your message...",
+            "min_length": "11",
+            "max_length": "499",
+            "error_message": "Object must be between 11 and 499 characters"
+        },
+        "submit_button": {
+            "text": "Submit"
+        }
+    },
+
+    "about": {
+        "page_title": "About",
+        "style_sheet": "about.min.css",
+        "main": {
+            "image": {
+                "link": "images/grey.jpg",
+                "alt_text": "An image of myself"
+            },
+            "title": "The Pro you've been searching for",
+            "subtitle": "Astonishing Websites designed just for you, by a Code Academy certified Fullstack Developer"
+        },
+        "lang_cards": {
+            "icon_style": "fa-5x",
+            "icon_color": "#ffffff",
+            "langs": {
+                "html": {
+                    "name": "HTML",
+                    "icon": "fa-html5",
+                    "blueBar": "100%",
+                    "grayBar": "0%"
+                },
+                "css": {
+                    "name": "CSS",
+                    "icon": "fa-css3-alt",
+                    "blueBar": "100%",
+                    "grayBar": "0%"
+                },
+                "sass": {
+                    "name": "SASS",
+                    "icon": "fa-sass",
+                    "blueBar": "100%",
+                    "grayBar": "0%"
+                },
+                "php": {
+                    "name": "PHP",
+                    "icon": "fa-php",
+                    "blueBar": "100%",
+                    "grayBar": "0%"
+                },
+                "javascript": {
+                    "name": "JavaScript",
+                    "icon": "fa-square-js",
+                    "blueBar": "100%",
+                    "grayBar": "0%"
+                },
+                "figma": {
+                    "name": "Figma",
+                    "icon": "fa-figma",
+                    "blueBar": "100%",
+                    "grayBar": "0%"
+                }
+            }
+        },
+        "indepth": {
+            "title": "My Projects are Powered with:",
+            "icon_style": "fa-7x",
+            "icon_color": "#3683db",
+            "icons": {
+                "speed": {
+                    "icon": "fa-gauge-high",
+                    "icon_supp_style": "fa-solid",
+                    "title": "Speed"
+                },
+                "ease": {
+                    "icon": "fa-gears",
+                    "icon_supp_style": "fa-solid",
+                    "title": "Ease of Use"
+                },
+                "innovation": {
+                    "icon": "fa-lightbulb",
+                    "icon_supp_style": "fa-regular",
+                    "title": "Innovation"
+                },
+                "passion": {
+                    "icon": "fa-heart",
+                    "icon_supp_style": "fa-regular",
+                    "title": "Passion"
+                }
+            }
+        }
+    },
+
+    "responses": {
+        "contacts": {
+            "page_title": "Response",
+            "style_sheet": "response_contacts.min.css",
+            "errors": {
+                "default": "Compilation Error: please refill the form"
+            }
+        }
+    }
+}
