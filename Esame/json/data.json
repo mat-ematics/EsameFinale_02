@@ -2,14 +2,14 @@
     "header" : {
         "logo" : { 
             "image" : "C.devs",
-            "link" : "../index.php"
+            "link" : "../Esame/index.php"
             },
         "navbar" : {
-            "Home": "http://accademia.localhost/Sessione 2 - Web Master Jr/Esame Finale/index.php",
-            "Services": "http://accademia.localhost/Sessione 2 - Web Master Jr/Esame Finale/services.php",
-            "Projects": "http://accademia.localhost/Sessione 2 - Web Master Jr/Esame Finale/projects.php",
-            "About": "http://accademia.localhost/Sessione 2 - Web Master Jr/Esame Finale/about.php",
-            "Contact Me": "http://accademia.localhost/Sessione 2 - Web Master Jr/Esame Finale/contacts.php"
+            "Home": "../Esame/index.php",
+            "Services": "../Esame/services.php",
+            "Projects": "../Esame/projects.php",
+            "About": "../Esame/about.php",
+            "Contact Me": "../Esame/contacts.php"
         }
     },
 
