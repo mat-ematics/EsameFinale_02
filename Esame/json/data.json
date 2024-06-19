@@ -2,7 +2,7 @@
     "header" : {
         "logo" : { 
             "image" : "C.devs",
-            "link" : "http://accademia.localhost/Sessione 2 - Web Master Jr/Esame Finale/index.php"
+            "link" : "../index.php"
             },
         "navbar" : {
             "Home": "http://accademia.localhost/Sessione 2 - Web Master Jr/Esame Finale/index.php",
