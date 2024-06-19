@@ -86,24 +86,25 @@ class strumenti {
     public static function validateEmail($email, $print = false, $minlength = 1, $maxlength = null)
     {
         $email = trim($email);
-        if ($print && $email == null) {
-            echo "<br>Insert E-mail<br>";
+        if ($email == null) {
+            if ($print) echo "<br>Insert E-mail<br>";
             return false;
         }
         $validate = filter_var($email, FILTER_VALIDATE_EMAIL);
+
         if ($validate === false) {
-            echo "<br>'$email' is invalid: please insert a correct E-mail<br>";
+            if ($print) echo "<br>'$email' is invalid: please insert a correct E-mail<br>";
             return false;
         }
 
         if ($minlength !== 1) {
             if (strlen($email) < $minlength) {
-                echo "<br>The Email must be at least $minlength characters long<br>";
+                if ($print) echo "<br>The Email must be at least $minlength characters long<br>";
                 return false;
             }
         } elseif ($maxlength !== null) {
             if (strlen($email) > $maxlength) {
-                echo "<br>The Email must be less than $maxlength characters long<br>";
+                if ($print) echo "<br>The Email must be less than $maxlength characters long<br>";
                 return false;
             }
         }
@@ -122,24 +123,24 @@ class strumenti {
     {
         $phone = trim($phone);
         if ($phone == null) {
-            echo "<br>Insert Phone Number<br>";
+            if ($print) echo "<br>Insert Phone Number<br>";
             return false;
         }
 
         if (str_starts_with($phone, "+")) {
             if (strlen($phone) < 8 || strlen($phone) > 16) {
-                echo "<br>The Phone Number must be between 7 and 15 digits<br>";
+                if ($print) echo "<br>The Phone Number must be between 7 and 15 digits<br>";
                 return false;
             }
         } else {
             if (strlen($phone) < 7 || strlen($phone) > 15) {
-                echo "<br>The Phone Number must be between 7 and 15 digits<br>";
+                if ($print) echo "<br>The Phone Number must be between 7 and 15 digits<br>";
                 return false;
             }
         }
 
         if (preg_match_all("/^(?!(\+)?\d+$).*$/", $phone) !== 0) {
-            echo "<br>The Phone Number must contain only Digits and (optionally) a starting + Symbol<br>";
+            if ($print) echo "<br>The Phone Number must contain only Digits and (optionally) a starting + Symbol<br>";
             return false;
         }
         if ($print) echo "<br>Phone Number '$phone' is valid<br>";
