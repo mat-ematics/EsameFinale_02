@@ -25,7 +25,7 @@ exit; */
                         <!-- Input Nome e Cognome -->
                         <label for="fname"><?php echo $data['name']['label'] ?></label>
                         <div id="name">
-                            <input type="text" id="fname" name="fname" placeholder="<?php echo isset($_POST["fname"]) ? $_POST["fname"] : $data['name']['first_name']['placeholder'] ?>" required pattern="<?php echo $data['name']['first_name']['pattern'] ?>" title="<?php echo $data['name']['first_name']['title'] ?>">
+                            <input type="text" id="fname" name="fname" placeholder="<?php echo $data['name']['first_name']['placeholder'] ?>" required pattern="<?php echo $data['name']['first_name']['pattern'] ?>" title="<?php echo $data['name']['first_name']['title'] ?>" value="<?php echo isset($_POST["fname"]) ? $_POST["fname"] : "" ?>">
                             <input type="text" id="lname" name="lname" placeholder="<?php echo isset($_POST["lname"]) ? $_POST["lname"] : $data['name']['last_name']['placeholder'] ?>" required pattern="<?php echo $data['name']['last_name']['pattern'] ?>" title="<?php echo $data['name']['last_name']['title'] ?>">
                         </div>
                         <!-- Input Indirizzo E-mail -->
