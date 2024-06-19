@@ -18,7 +18,7 @@ exit; */
             <div id="contactsWrapper">
                 <div id="contacts">
                     <!-- Form vero e proprio -->
-                    <form action="<?php echo $data['action'] ?>" method="post" id="contactForm">
+                    <form action="<?php echo $data['action'] ?>" method="post" id="contactForm" novalidate>
                         <!-- Titolo Form -->
                         <h2 id="title"><?php echo $data['title'] ?></h2>
                         <!-- Input Nome e Cognome -->
