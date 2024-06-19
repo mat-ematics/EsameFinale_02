@@ -179,7 +179,7 @@
     "contacts": {
         "page_title": "Contact Me",
         "style_sheet": "contacts.min.css",
-        "action": "response_contacts.php",
+        "action": "contacts.php",
         "title": "Contact Me",
         "name": {
             "label": "Insert Name:",

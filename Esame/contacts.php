@@ -2,6 +2,7 @@
 require_once("inclusioni/strumenti.php");
 use assets\strumenti;
 $data = strumenti::leggiJSON("json/data.json", true)["contacts"];
+$validation = strumenti::leggiJSON("json/data.json", true)['responses']['contacts'];
 /* strumenti::stampaArray($data);
 exit; */
 ?>
@@ -74,4 +75,36 @@ exit; */
     </script>
     </body>
 </html>
+
+
+<?php 
+
+
+$print = false;
+$form = [];
+$flag = [];
+
+if (empty($_POST)) {
+    $flag["form"] = $validation['errors']['default'];
+} else {
+
+    /* strumenti::stampaArray($_POST); */
+
+    strumenti::validaTesto($_POST['fname'], 'default', $data['name']['first_name']['max_length'], $data['name']['first_name']['min_length'], $print , 'Name') ? $form['name'] = trim($_POST['fname']) : $flag[] = $data["name"]['first_name']['error_message'];
+    strumenti::validaTesto($_POST['lname'], 'default', $data['name']['last_name']['max_length'], $data['name']['last_name']['min_length'], $print , 'Surname') ? $form['surname'] = trim($_POST['lname']) : $flag[] = $data["name"]['last_name']['error_message'];
+    strumenti::validateEmail($_POST['email'], $print) ? $form['email'] = trim($_POST['email']) : $flag[] = $data["email"]['error_message'];;
+    strumenti::validatePhone(preg_replace('/\s+/', "", $_POST['phoneNumber'])) ? $form['phone_number'] = preg_replace('/\s+/', "", $_POST['phoneNumber']) : $flag[] = $data["phone_number"]['error_message'];
+    if ($_POST['subject'] == null) {
+        $flag[] = $data["subject"]['error_message'];
+    } else {
+        $form['subject'] = trim($_POST['subject']);
+    }
+    strumenti::validaTesto($_POST['object'], "default", $data['object']['max_length'], $data['object']['min_length'], $print, "Object") ? $form['object'] = trim($_POST['object']) : $flag[] = $data["object"]['error_message'];
+    strumenti::validaTesto($_POST['message'], "", $data['message']['max_length'], $data['message']['min_length'], $print, "Message") ? $form['object'] = trim($_POST['message']) : $flag[] = $data["message"]['error_message'];;
+
+    /* strumenti::stampaArray($form); */
+
+    strumenti::writeArrInFile("contatti/contatti.txt", $form, "%s: %s \n");
+}
+?>
 
