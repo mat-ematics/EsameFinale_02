@@ -184,7 +184,7 @@
         "name": {
             "label": "Insert Name:",
             "first_name": {
-                "placeholder": "Name",
+                "placeholder": "First Name",
                 "pattern": ".{1,25}",
                 "title": "Name must be at most 25 characters",
                 "max_length": "25",
@@ -192,7 +192,7 @@
                 "error_message": "Name must be composed of only, at most 25, letters and whitespaces"
             },
             "last_name": {
-                "placeholder": "Name",
+                "placeholder": "Last Name",
                 "pattern": ".{1,25}",
                 "title": "Name must be at most 25 characters",
                 "max_length": "25",
