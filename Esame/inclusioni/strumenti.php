@@ -55,19 +55,20 @@ class strumenti {
         }
 
         $text = trim($text);
-        if ($print &&($text == null || $text == "")) {
-            echo "<br>Insert $field<br>";
+        if ($text == null || $text == "") {
+            if ($print) echo "<br>Insert $field<br>";
             return false;
         }
 
-        if ($print &&(strlen($text) < $minlength || strlen($text) > $maxlength)) {
-            echo "<br>The $field must be between $minlength and $maxlength characters<br>";
+
+        if (strlen($text) < $minlength || strlen($text) > $maxlength) {
+            if ($print) echo "<br>The $field must be between $minlength and $maxlength characters<br>";
             return false;
         }
 
-        if ($print && $format !== "") {
+        if ($format !== "") {
             if (preg_match_all($format, $text) !== 0) {
-                echo "<br>The $field must follow the given regex<br>";
+                if ($print) echo "<br>The $field must follow the given regex<br>";
                 return false;
             }
         }

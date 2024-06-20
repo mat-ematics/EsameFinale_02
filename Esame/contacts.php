@@ -5,6 +5,42 @@ $data = strumenti::leggiJSON("json/data.json", true)["contacts"];
 $validation = strumenti::leggiJSON("json/data.json", true)['responses']['contacts'];
 /* strumenti::stampaArray($data);
 exit; */
+
+
+$print = false; // Variabile per la stampa di errori nelle funzioni
+$form = []; // Array contenitore delle informazioni da inserire nel file di testo
+$flag = []; // Array contenitore degli errori
+
+if (empty($_POST)) {
+    $flag["form"] = $validation['errors']['default'];
+} else {
+
+    /* strumenti::stampaArray($_POST); */ // Stampa i valori inviati dal form
+
+    /* Validazione lato server del form */
+    strumenti::validaTesto($_POST['fname'], 'default', $data['name']['first_name']['max_length'], $data['name']['first_name']['min_length'], $print , 'Name') ? $form['name'] = trim($_POST['fname']) : $flag['fname'] = $data["name"]['first_name']['error_message'];
+    strumenti::validaTesto($_POST['lname'], 'default', $data['name']['last_name']['max_length'], $data['name']['last_name']['min_length'], $print , 'Surname') ? $form['surname'] = trim($_POST['lname']) : $flag['lname'] = $data["name"]['last_name']['error_message'];
+    strumenti::validateEmail($_POST['email'], $print) ? $form['email'] = trim($_POST['email']) : $flag['email'] = $data["email"]['error_message'];
+    strumenti::validatePhone(preg_replace('/\s+/', "", $_POST['phoneNumber'])) ? $form['phone_number'] = preg_replace('/\s+/', "", $_POST['phoneNumber']) : $flag['phone_number'] = $data["phone_number"]['error_message'];
+    if ($_POST['subject'] == null) {
+        $flag[] = $data["subject"]['error_message'];
+    } else {
+        $form['subject'] = trim($_POST['subject']);
+    }
+    strumenti::validaTesto($_POST['object'], "default", $data['object']['max_length'], $data['object']['min_length'], $print, "Object") ? $form['object'] = trim($_POST['object']) : $flag['object'] = $data["object"]['error_message'];
+    strumenti::validaTesto($_POST['message'], "", $data['message']['max_length'], $data['message']['min_length'], $print, "Message") ? $form['object'] = trim($_POST['message']) : $flag['message'] = $data["message"]['error_message'];;
+
+    /* strumenti::stampaArray($form); */ // Stampa dei Valori che verranno scritti
+    /* strumenti::stampaArray($flag); */ // Stampa degli errori
+
+    /* Scrittura dei valori inviati e formattati in caso di assenza di errori di compilazione */
+    if (empty($flag)) {
+         strumenti::writeArrInFile("contatti/contatti.txt", $form, "%s: %s \n");
+    } else {
+        
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -26,6 +62,9 @@ exit; */
                         <label for="fname"><?php echo $data['name']['label'] ?></label>
                         <div id="name">
                             <input type="text" id="fname" name="fname" placeholder="<?php echo $data['name']['first_name']['placeholder'] ?>" required pattern="<?php echo $data['name']['first_name']['pattern'] ?>" title="<?php echo $data['name']['first_name']['title'] ?>" value="<?php echo isset($_POST["fname"]) ? $_POST["fname"] : "" ?>">
+                            <?php 
+                                if (!isset($flag['']))
+                            ?>
                             <input type="text" id="lname" name="lname" placeholder="<?php echo $data['name']['last_name']['placeholder'] ?>" required pattern="<?php echo $data['name']['last_name']['pattern'] ?>" title="<?php echo $data['name']['last_name']['title'] ?>" value="<?php echo isset($_POST["lname"]) ? $_POST["lname"] : "" ?>">
                         </div>
                         <!-- Input Indirizzo E-mail -->
@@ -55,58 +94,31 @@ exit; */
             </div>
         </main>
         <script>
+        /* Cambiamento di Stato del Corpo del Messaggio */
         const textarea = document.getElementById('message');
 
         textarea.addEventListener('input', function () {
-          const message = textarea.value;
-          const minLength = parseInt(textarea.getAttribute('minlength'));
-          const maxLength = parseInt(textarea.getAttribute('maxlength'));
-      
-          if (message.length < minLength || message.length > maxLength) {
-            textarea.setCustomValidity(`Message must be between ${minLength} and ${maxLength} characters.`);
-            textarea.classList.add('invalid');
-            textarea.classList.remove('valid');
-          } else {
-            textarea.setCustomValidity('');
-            textarea.classList.remove('invalid');
-            textarea.classList.add('valid');
-          }
+            /* Variabili del Corpo del Messaggio */
+            const message = textarea.value; // Testo scritto in tempo reale
+            const minLength = parseInt(textarea.getAttribute('minlength')); // Lunghezza minima del messaggio
+            const maxLength = parseInt(textarea.getAttribute('maxlength')); // Lunghezza massima del messaggio
+            
+            /* Invalidità del Testo */
+            if (message.length < minLength || message.length > maxLength) {
+                textarea.setCustomValidity(`Message must be between ${minLength} and ${maxLength} characters.`);
+                textarea.classList.add('invalid');
+                textarea.classList.remove('valid');
+
+            /* Validità del testo */
+            } else {
+                textarea.setCustomValidity('');
+                textarea.classList.remove('invalid');
+                textarea.classList.add('valid');
+            }
         });
 
+        /* Mantenimento dell'opzione scelta nell'input del Motivo del Contatto */
         document.getElementById('subject').value = "<?php echo $_POST['subject'];?>";
     </script>
     </body>
 </html>
-
-
-<?php 
-
-
-$print = false;
-$form = [];
-$flag = [];
-
-if (empty($_POST)) {
-    $flag["form"] = $validation['errors']['default'];
-} else {
-
-    /* strumenti::stampaArray($_POST); */
-
-    strumenti::validaTesto($_POST['fname'], 'default', $data['name']['first_name']['max_length'], $data['name']['first_name']['min_length'], $print , 'Name') ? $form['name'] = trim($_POST['fname']) : $flag[] = $data["name"]['first_name']['error_message'];
-    strumenti::validaTesto($_POST['lname'], 'default', $data['name']['last_name']['max_length'], $data['name']['last_name']['min_length'], $print , 'Surname') ? $form['surname'] = trim($_POST['lname']) : $flag[] = $data["name"]['last_name']['error_message'];
-    strumenti::validateEmail($_POST['email'], $print) ? $form['email'] = trim($_POST['email']) : $flag[] = $data["email"]['error_message'];;
-    strumenti::validatePhone(preg_replace('/\s+/', "", $_POST['phoneNumber'])) ? $form['phone_number'] = preg_replace('/\s+/', "", $_POST['phoneNumber']) : $flag[] = $data["phone_number"]['error_message'];
-    if ($_POST['subject'] == null) {
-        $flag[] = $data["subject"]['error_message'];
-    } else {
-        $form['subject'] = trim($_POST['subject']);
-    }
-    strumenti::validaTesto($_POST['object'], "default", $data['object']['max_length'], $data['object']['min_length'], $print, "Object") ? $form['object'] = trim($_POST['object']) : $flag[] = $data["object"]['error_message'];
-    strumenti::validaTesto($_POST['message'], "", $data['message']['max_length'], $data['message']['min_length'], $print, "Message") ? $form['object'] = trim($_POST['message']) : $flag[] = $data["message"]['error_message'];;
-
-    /* strumenti::stampaArray($form); */
-
-    strumenti::writeArrInFile("contatti/contatti.txt", $form, "%s: %s \n");
-}
-?>
-
