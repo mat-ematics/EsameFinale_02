@@ -62,9 +62,9 @@ if (empty($_POST)) {
                         <label for="fname"><?php echo $data['name']['label'] ?></label>
                         <div id="name">
                             <input type="text" id="fname" name="fname" placeholder="<?php echo $data['name']['first_name']['placeholder'] ?>" required pattern="<?php echo $data['name']['first_name']['pattern'] ?>" title="<?php echo $data['name']['first_name']['title'] ?>" value="<?php echo isset($_POST["fname"]) ? $_POST["fname"] : "" ?>">
-                            <?php 
-                                if (!isset($flag['']))
-                            ?>
+                            <?php if (!empty($flag['fname'])) { ?>
+                                <span class="error"><?php echo $flag['fname'] ?></span>
+                            <?php } ?>
                             <input type="text" id="lname" name="lname" placeholder="<?php echo $data['name']['last_name']['placeholder'] ?>" required pattern="<?php echo $data['name']['last_name']['pattern'] ?>" title="<?php echo $data['name']['last_name']['title'] ?>" value="<?php echo isset($_POST["lname"]) ? $_POST["lname"] : "" ?>">
                         </div>
                         <!-- Input Indirizzo E-mail -->
