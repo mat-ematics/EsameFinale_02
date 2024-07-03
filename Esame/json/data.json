@@ -18,23 +18,28 @@
         "socials": {
             "instagram": {
                 "link": "https://www.instagram.com",
-                "icon": "instagram"
+                "icon": "instagram",
+                "title": "Instagram"
             },
             "facebook": {
                 "link": "https://www.facebook.com",
-                "icon": "facebook"
+                "icon": "facebook",
+                "title": "Facebook"
             },
             "youtube": {
                 "link": "https://www.youtube.com",
-                "icon": "youtube"
+                "icon": "youtube",
+                "title": "Youtube"
             },
             "linkedin": {
                 "link": "https://www.linkedin.com",
-                "icon": "linkedin"
+                "icon": "linkedin",
+                "title": "LinkedIn"
             },
             "twitter": {
                 "link": "https://www.twitter.com",
-                "icon": "twitter"
+                "icon": "twitter",
+                "title": "Twitter"
             }
         }
     },
@@ -112,7 +117,8 @@
             "project_1": {
                 "image": {
                     "link": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210401151214/What-is-Website.png",
-                    "alt_text": "Image of the Project"
+                    "alt_text": "Image of the Project",
+                    "title": "Work 1"
                 },
                 "project_page": "single_work.php",
                 "project_title": "Project Title",
@@ -121,7 +127,8 @@
             "project_2": {
                 "image": {
                     "link": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210401151214/What-is-Website.png",
-                    "alt_text": "Image of the Project"
+                    "alt_text": "Image of the Project",
+                    "title": "Work 2"
                 },
                 "project_page": "single_work.php",
                 "project_title": "Project Title",
@@ -130,7 +137,8 @@
             "project_3": {
                 "image": {
                     "link": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210401151214/What-is-Website.png",
-                    "alt_text": "Image of the Project"
+                    "alt_text": "Image of the Project",
+                    "title": "Work 3"
                 },
                 "project_page": "single_work.php",
                 "project_title": "Project Title",
@@ -139,7 +147,8 @@
             "project_4": {
                 "image": {
                     "link": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210401151214/What-is-Website.png",
-                    "alt_text": "Image of the Project"
+                    "alt_text": "Image of the Project",
+                    "title": "Work 4"
                 },
                 "project_page": "single_work.php",
                 "project_title": "Project Title",

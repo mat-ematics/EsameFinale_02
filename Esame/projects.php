@@ -31,7 +31,7 @@ exit; */
             <div class="singleProject">
                 <!-- Immagine -->
                 <div class="cards <?php echo $loopCounter % 2 == 0 ? "left" : "right" ?>">
-                    <a href="<?php echo $project['project_page'] ?>">
+                    <a href="<?php echo $project['project_page'] ?>" title="<?php echo $project['image']['title'] ?>">
                         <img src="<?php echo $project['image']['link'] ?>" alt="<?php echo $project['image']['alt_text'] ?>">
                     </a>
                 </div>

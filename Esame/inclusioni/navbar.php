@@ -23,7 +23,7 @@ $header = strumenti::leggiJSON("json/data.json", true)["header"];
                 <div id="navMenu">
                     <?php foreach ($header['navbar'] as $item => $link) { ?>
                         <div class="navItems" id="<?php echo $item == $data['page_title'] ? strtolower($data['page_title']) : "" ?>">
-                            <a href="<?php echo $link ?>"><?php echo $item ?></a>
+                            <a href="<?php echo $link ?>" title="<?php echo $item ?>"><?php echo $item ?></a>
                         </div>
                     <?php } ?>
                 </div>
