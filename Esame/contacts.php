@@ -52,7 +52,7 @@ if (empty($_POST)) {
         <main>
             <!-- Contenitore Form -->
             <div id="contactsWrapper">
-                <div id="contacts">
+                <div id="contactsBg">
                     <?php if ($flag === 201) { ?>
                         <h1 id="formSentMessage"><?php echo $data['form_sent_message'] ?></h1>
                     <?php } else { ?>

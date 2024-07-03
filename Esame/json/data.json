@@ -177,7 +177,7 @@
     },
 
     "contacts": {
-        "page_title": "Contact Me",
+        "page_title": "Contacts",
         "style_sheet": "contacts.min.css",
         "action": "contacts.php",
         "title": "Contacts",
