@@ -9,7 +9,7 @@
             "Services": "../Esame/services.php",
             "Projects": "../Esame/projects.php",
             "About": "../Esame/about.php",
-            "Contact Me": "../Esame/contacts.php"
+            "Contacts": "../Esame/contacts.php"
         }
     },
 
