@@ -2,7 +2,6 @@
 require_once("inclusioni/strumenti.php");
 use assets\strumenti;
 $data = strumenti::leggiJSON("json/data.json", true)["contacts"];
-$validation = strumenti::leggiJSON("json/data.json", true)['responses']['contacts'];
 /* strumenti::stampaArray($data);
 exit; */
 
@@ -11,10 +10,7 @@ $print = false; // Variabile per la stampa di errori nelle funzioni
 $form = []; // Array contenitore delle informazioni da inserire nel file di testo
 $flag = []; // Array contenitore degli errori
 
-if (empty($_POST)) {
-    $flag = "bruh";
-} else {
-
+if (!empty($_POST)) {
     /* strumenti::stampaArray($_POST); */ // Stampa i valori inviati dal form
 
     /* Validazione lato server del form */
