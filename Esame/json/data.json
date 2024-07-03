@@ -181,6 +181,7 @@
         "style_sheet": "contacts.min.css",
         "action": "contacts.php",
         "title": "Contact Me",
+        "form_sent_message": "Form Sent Succesfully",
         "name": {
             "label": "Insert Name:",
             "first_name": {

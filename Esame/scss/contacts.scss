@@ -9,13 +9,16 @@ $submitBorder: rgba(224, 224, 224, 1);
 $submitBgColor: rgb(59, 45, 45);
 $submitHoverColor: linear-gradient(52deg, rgba(69,98,162,1) 0%, rgba(58,86,186,1) 33%, rgba(17,172,221,1) 100%);
 
+$sentMessageSize: 50px;
+$sentMessageColor: var.$colorPrimary;
+
 /* Stile elementi html, body e a generali */
 html, body { 
     min-width: min-content;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
+    height: 100vh;
     background: var.$primaryBgColor;
     background: var.$gradientBgColor;
     background-repeat: no-repeat;
@@ -32,6 +35,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: calc(100% - nav.$navHeight);
 }
 div#contactsWrapper {
     width: 100%;
@@ -50,6 +54,12 @@ div#contacts {
     padding: 10px 80px;
     max-height: 937px;
     background-color: var.$secondaryBgColor;
+
+    h1#formSentMessage {
+        color: $sentMessageColor;
+        font-size: $sentMessageSize;
+        text-align: center;
+    }
 }
 /* Titolo della pagina */
 h2#title {
@@ -181,10 +191,6 @@ form#contactForm {
 }
 
 /* Stile Messaggi di Errore */
-span.error {
-    position: absolute;    
-}
-
-.test {
-    text-align: center;
+.error {
+    border: $inputInvalidBorder !important;
 }
