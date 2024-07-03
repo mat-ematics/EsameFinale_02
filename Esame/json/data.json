@@ -180,7 +180,7 @@
         "page_title": "Contact Me",
         "style_sheet": "contacts.min.css",
         "action": "contacts.php",
-        "title": "Contact Me",
+        "title": "Contacts",
         "form_sent_message": "Form Sent Succesfully",
         "name": {
             "label": "Insert Name:",
