@@ -50,7 +50,7 @@ exit; */
                             <div class="iconRow">
                         <?php } ?>
                         <div class="icon">
-                            <i class="<?php echo $icon['icon_supp_style'] ?> <?php echo $icon['icon'] ?> <?php echo $data['indepth']["icon_style"] ?>" style="color: <?php echo $data['indepth']["icon_color"] ?>";"></i>
+                            <i class="<?php echo $icon['icon_supp_style'] ?> <?php echo $icon['icon'] ?> <?php echo $data['indepth']["icon_style"] ?>" style="color: <?php echo $data['indepth']["icon_color"] ?>;"></i>
                             <p><?php echo $icon['title']?></p>
                         </div>
                         <?php if ($row_counter % 2 == 1) { ?>
