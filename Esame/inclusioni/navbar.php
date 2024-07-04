@@ -3,12 +3,7 @@ require_once("strumenti.php");
 use assets\strumenti;
 $header = strumenti::leggiJSON("json/data.json", true)["header"];
 ?>
-<style>
-    div#<?php echo strtolower($data['page_title']) ?> {
-    color: white;
-    border-bottom: 2px solid rgb(0, 162, 255);
-}
-</style>
+
 <header>
 <!-- Barra di navigazione -->
     <nav>
@@ -22,7 +17,7 @@ $header = strumenti::leggiJSON("json/data.json", true)["header"];
             <li id="navSections">
                 <div id="navMenu">
                     <?php foreach ($header['navbar'] as $item => $link) { ?>
-                        <div class="navItems" id="<?php echo $item == $data['page_title'] ? strtolower($data['page_title']) : "" ?>">
+                        <div class="navItems" <?php if ($item == $data['page_title']) { ?> id="<?php echo strtolower($data['page_title']) ?>" <?php } ?>>
                             <a href="<?php echo $link ?>" title="<?php echo $item ?>"><?php echo $item ?></a>
                         </div>
                     <?php } ?>
