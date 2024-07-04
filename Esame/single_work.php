@@ -12,29 +12,29 @@ exit; */
     <body>
          <!-- Barra di Navigazione -->
          <?php require_once("inclusioni/navbar.php") ?>
-    </body>
-    <main>
-        <!-- Immagine Progetto Principale -->
-        <div class="preview">
-                <!-- Overlay dell'immagine - bottone -->
-                <div class="overlay">
-                    <button id="visitProject">Visit <?php echo $data["project_title"] ?></button>
+        <main>
+            <!-- Immagine Progetto Principale -->
+            <div class="preview">
+                    <!-- Overlay dell'immagine - bottone -->
+                    <div class="overlay">
+                        <button id="visitProject">Visit <?php echo $data["project_title"] ?></button>
+                    </div>
+                    <!-- Immagine progetto placeholder -->
+                    <img src="<?php echo $data["image"]['link'] ?>" alt="<?php echo $data["image"]['alt_text'] ?>">
                 </div>
-                <!-- Immagine progetto placeholder -->
-                <img src="<?php echo $data["image"]['link'] ?>" alt="<?php echo $data["image"]['alt_text'] ?>">
-            </div>
-            <!-- Info Progetto -->
-            <div class="projectInfo">
-                <!-- Titolo -->
-                <h1><?php echo $data['project_title'] ?></h1>
-                <!-- Descrizione -->
-                <p><?php echo $data["project_description"] ?></p>
-                <!-- Linguaggi usati -->
-                <p>Languages: <?php echo $data["langs"] ?></p>
-                <!-- Data del Progetto -->
-                <h1>Project Date: <?php echo $data["project_date"] ?></h1>
-            </div>
-        <!-- Footer -->
-        <?php require_once("inclusioni/footer.php") ?>
-    </main>
+                <!-- Info Progetto -->
+                <div class="projectInfo">
+                    <!-- Titolo -->
+                    <h1><?php echo $data['project_title'] ?></h1>
+                    <!-- Descrizione -->
+                    <p><?php echo $data["project_description"] ?></p>
+                    <!-- Linguaggi usati -->
+                    <p>Languages: <?php echo $data["langs"] ?></p>
+                    <!-- Data del Progetto -->
+                    <h1>Project Date: <?php echo $data["project_date"] ?></h1>
+                </div>
+            <!-- Footer -->
+            <?php require_once("inclusioni/footer.php") ?>
+        </main>
+    </body>
 </html>
