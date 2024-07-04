@@ -45,7 +45,7 @@ if (!empty($_POST)) {
     <body>
         <!-- Barra di navigazione inclusa da navbar.php -->
         <?php require_once('inclusioni/navbar.php') ?>
-        <main>
+        <main style="<?php if ($flag === 201) { ?> height: calc(100% - 60px); <?php } ?>">
             <!-- Contenitore Form -->
             <div id="contactsWrapper">
                 <div id="contactsBg">
