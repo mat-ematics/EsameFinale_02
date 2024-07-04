@@ -24,7 +24,7 @@ if (!empty($_POST)) {
         $form['subject'] = trim($_POST['subject']);
     }
     strumenti::validaTesto($_POST['object'], "default", $data['object']['max_length'], $data['object']['min_length'], $print, "Object") ? $form['object'] = trim($_POST['object']) : $flag['object'] = $data["object"]['error_message'];
-    strumenti::validaTesto($_POST['message'], "", $data['message']['max_length'], $data['message']['min_length'], $print, "Message") ? $form['object'] = trim($_POST['message']) : $flag['message'] = $data["message"]['error_message'];;
+    strumenti::validaTesto($_POST['message'], "", $data['message']['max_length'], $data['message']['min_length'], $print, "Message") ? $form['object'] = trim($_POST['message']) : $flag['message'] = $data["message"]['error_message'];
 
     /* strumenti::stampaArray($form); */ // Stampa dei Valori che verranno scritti
     /* strumenti::stampaArray($flag); */ // Stampa degli errori

@@ -6,6 +6,7 @@ $data = strumenti::leggiJSON("json/data.json", true)["about"];
 exit; */
 ?>
 
+<!DOCTYPE html>
 <html lang="en">
     <?php require_once("inclusioni/head.php") ?>
     <body>
