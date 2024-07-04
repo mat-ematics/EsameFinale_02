@@ -29,11 +29,11 @@ exit; */
                     <div class="column">
                         <div class="bubble" id="<?php echo $type ?>">
                             <!-- Titolo -->
-                            <div id="title">
+                            <div class="title">
                                 <h1><?php echo $bubble['title'] ?></h1>
                             </div>
                             <!-- Descrizione -->
-                            <div id="description">
+                            <div class="description">
                                 <p><?php echo $bubble['description'] ?></p>
                             </div>
                         </div>

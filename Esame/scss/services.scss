@@ -112,7 +112,7 @@ div#columns {
             overflow: hidden;
 
             /* Stile Titolo Bolla */
-            div#title {
+            div.title {
                 h1 {
                     color: var.$colorTertiary;
                     font-family: 'Poppins';
@@ -122,12 +122,12 @@ div#columns {
                     text-overflow: clip;
                     font-size: 30px;
                     transition: $bubbleAnimation;
-                    margin-bottom: 0;
+                    margin: 0;
                 }
             }
 
             /* Stile Descrizione Bolla */
-            div#description {
+            div.description {
                 position: absolute;
                 width: 100%;
                 height: auto;
@@ -155,7 +155,7 @@ div#columns {
                 width: 80%;
                 
                 /* Titolo */
-                div#title {
+                div.title {
                     h1 {
                         font-size: 70px;
                         margin-top: -30%;
@@ -163,7 +163,7 @@ div#columns {
                 }
 
                 /* Descrizione */
-                div#description {
+                div.description {
                     bottom: 30%;
                 }
             }
@@ -189,20 +189,20 @@ footer {
         width: 400px;
         height: 400px;
 
-        div#title h1 {
+        div.title h1 {
             font-size: 50px;
         }
 
-        div#description p {
+        div.description p {
             font-size: 30px;
         }
         
         &:hover { 
-            div#title h1{
+            div.title h1{
                 font-size: 130px;
             }
 
-            div#description p {
+            div.description p {
                 padding: 20px;
             }
         }
@@ -214,17 +214,17 @@ footer {
         width: 200px;
         height: 200px;
 
-        div#title h1 {
+        div.title h1 {
             font-size: 30px;
         }
 
-        div#description p {
+        div.description p {
             font-size: 15px;
             padding: 5%;
         }
         
         &:hover { 
-            div#title h1{
+            div.title h1{
                 font-size: 50px;
             }
 
@@ -237,17 +237,17 @@ footer {
         width: 150px;
         height: 150px;
 
-        div#title h1 {
+        div.title h1 {
             font-size: 25px;
         }
 
-        div#description p {
+        div.description p {
             font-size: 12px;
             padding: 5%;
         }
         
         &:hover { 
-            div#title h1{
+            div.title h1{
                 font-size: 50px;
             }
 
