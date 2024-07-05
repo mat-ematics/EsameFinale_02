@@ -1,16 +1,12 @@
 <?php
+// Importo Strumenti e dati dal JSON
+
 require_once("inclusioni/strumenti.php");
 use assets\strumenti;
 $data = strumenti::leggiJSON("json/data.json", true)["single_project"];
-/* strumenti::stampaArray($data);
-exit; */
-
-/* if (!empty($_GET)) {
-    strumenti::stampaArray($_GET);
-    exit;
-} */
-
 $project_list = strumenti::leggiJSON("json/data.json", true)['projects']['project_list'];
+
+// Controllo dell'id del lavoro
 
 /* strumenti::stampaArray($project_list); */
 if (isset($_GET['id']) || !empty($_GET['id'])) {
@@ -20,6 +16,8 @@ if (isset($_GET['id']) || !empty($_GET['id'])) {
         }
     };
 }
+
+// Impostazione di un Placeholder in caso di id mancante/errato
 
 if (!isset($project) || empty($project)) $project = $data;
 

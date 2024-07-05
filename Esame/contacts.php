@@ -1,10 +1,12 @@
 <?php
+// Importo strumenti e Dati dal JSON
 require_once("inclusioni/strumenti.php");
 use assets\strumenti;
 $data = strumenti::leggiJSON("json/data.json", true)["contacts"];
 /* strumenti::stampaArray($data);
 exit; */
 
+// Dichiarazione delle variabili
 
 $print = false; // Variabile per la stampa di errori nelle funzioni
 $form = []; // Array contenitore delle informazioni da inserire nel file di testo
@@ -29,7 +31,8 @@ if (!empty($_POST)) {
     /* strumenti::stampaArray($form); */ // Stampa dei Valori che verranno scritti
     /* strumenti::stampaArray($flag); */ // Stampa degli errori
 
-    /* Scrittura dei valori inviati e formattati in caso di assenza di errori di compilazione */
+    // Scrittura dei valori inviati e formattati in caso di assenza di errori di compilazione
+    
     if (empty($flag)) {
         strumenti::writeArrInFile("contatti/contatti.txt", $form, "%s: %s \n");
         $flag = 201;

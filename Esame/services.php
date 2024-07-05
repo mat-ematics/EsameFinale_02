@@ -1,4 +1,6 @@
 <?php
+//Importo Strumenti e dati dal JSON
+
 require_once("inclusioni/strumenti.php");
 use assets\strumenti;
 $data = strumenti::leggiJSON("json/data.json", true)["services"];
