@@ -2,14 +2,14 @@
     "header" : {
         "logo" : { 
             "image" : "C.devs",
-            "link" : "./index.php"
+            "link" : "/index.php"
             },
         "navbar" : {
-            "Home": "./index.php",
-            "Services": "./services.php",
-            "Projects": "./projects.php",
-            "About": "./about.php",
-            "Contacts": "./contacts.php"
+            "Home": "/index.php",
+            "Services": "/services.php",
+            "Projects": "/projects.php",
+            "About": "/about.php",
+            "Contacts": "/contacts.php"
         }
     },
 
