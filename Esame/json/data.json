@@ -2,14 +2,14 @@
     "header" : {
         "logo" : { 
             "image" : "C.devs",
-            "link" : "../Esame/index.php"
+            "link" : "./index.php"
             },
         "navbar" : {
-            "Home": "../Esame/index.php",
-            "Services": "../Esame/services.php",
-            "Projects": "../Esame/projects.php",
-            "About": "../Esame/about.php",
-            "Contacts": "../Esame/contacts.php"
+            "Home": "./index.php",
+            "Services": "./services.php",
+            "Projects": "./projects.php",
+            "About": "./about.php",
+            "Contacts": "./contacts.php"
         }
     },
 
