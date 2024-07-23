@@ -72,40 +72,7 @@
         },
         "work_section": {
             "section_title": "Recent Projects",
-            "cards": {
-                "card_1": {
-                    "card_title": "Title",
-                    "card_description": "Description",
-                    "card_image": {
-                        "link": "images/grey.jpg",
-                        "alt_text": "Image of the Project"
-                    }
-                },
-                "card_2": {
-                    "card_title": "Title",
-                    "card_description": "Description",
-                    "card_image": {
-                        "link": "images/grey.jpg",
-                        "alt_text": "Image of the Project"
-                    }
-                },
-                "card_3": {
-                    "card_title": "Title",
-                    "card_description": "Description",
-                    "card_image": {
-                        "link": "images/grey.jpg",
-                        "alt_text": "Image of the Project"
-                    }
-                },
-                "card_4": {
-                    "card_title": "Title",
-                    "card_description": "Description",
-                    "card_image": {
-                        "link": "images/grey.jpg",
-                        "alt_text": "Image of the Project"
-                    }
-                }
-            }
+            "project_count": 4
         }
     },
 
@@ -117,11 +84,12 @@
             "project_1": {
                 "project_id": "work_1",
                 "image": {
-                    "link": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210401151214/What-is-Website.png",
+                    "link": "https://pmstudycircle.com/wp-content/uploads/2022/12/project-plan-examples.png",
                     "alt_text": "Image of the Project",
                     "title": "Work 1"
                 },
                 "project_title": "Work 1",
+                "project_summary": "A short summary of the Project",
                 "project_description_short": "Incididunt ea sint occaecat reprehenderit do in officia pariatur enim. Ex aute do eu id velit pariatur velit reprehenderit incididunt irure elit occaecat veniam. Duis commodo esse in consectetur duis pariatur aliqua dolor irure reprehenderit laboris commodo. Irure occaecat culpa anim sit magna deserunt anim sunt velit.",
                 "project_description_long": "Voluptate id nisi cupidatat esse dolor culpa est ut proident incididunt. Culpa nostrud cupidatat eu ea id aliqua aliqua commodo quis cupidatat enim Lorem. Duis quis id est veniam ea nostrud ipsum aliqua aliqua amet velit. Laboris eu sunt reprehenderit officia velit deserunt sint cupidatat. Reprehenderit in aliqua adipisicing pariatur aute in aliqua pariatur ipsum elit pariatur ex ad. Aliqua sunt fugiat veniam labore.",
                 "langs": "Javascript, Ruby",
@@ -134,7 +102,8 @@
                     "alt_text": "Image of the Project",
                     "title": "Work 2"
                 },
-                "project_title": "Work 1",
+                "project_title": "Work 2",
+                "project_summary": "A short summary of the Project",
                 "project_description_short": "Id amet et quis duis Lorem tempor consequat do amet incididunt. Laboris in eiusmod anim cillum culpa voluptate irure sint. Cupidatat exercitation aliquip cupidatat amet enim pariatur esse exercitation ad sunt nisi cillum. Occaecat labore voluptate adipisicing non officia ut duis ipsum.",
                 "project_description_long": "Quis officia ullamco quis in dolor ex esse pariatur id. Mollit sint esse nisi esse consequat. Sit pariatur labore laboris excepteur eiusmod sint eu officia aute enim consectetur in adipisicing. Id ex labore eu sit quis enim non duis veniam. Nisi duis mollit nostrud non ea nulla deserunt in do ullamco. Magna magna nostrud nulla elit in aliqua. Adipisicing ex proident adipisicing aute.",
                 "langs": "R, Java",
@@ -148,6 +117,7 @@
                     "title": "Work 3"
                 },
                 "project_title": "Work 3",
+                "project_summary": "A short summary of the Project",
                 "project_description_short": "Laborum do labore aute duis nulla labore ipsum amet consequat sunt officia. Incididunt do Lorem sunt duis cillum veniam fugiat sunt fugiat. Sunt ipsum sit sit sit anim ipsum exercitation ut qui ea ea nulla cillum aute. Elit aliquip mollit sint eu laboris ut laborum labore in fugiat quis pariatur nulla.",
                 "project_description_long": "Occaecat consectetur velit et irure aliqua quis ipsum quis. Dolor enim qui veniam nisi ut dolore aliqua voluptate ipsum laboris. Amet consectetur sit pariatur id voluptate magna reprehenderit ipsum commodo commodo ex do. Cillum quis sint eu cupidatat reprehenderit. Aliquip proident consectetur cillum duis. Consequat sint et eu sint in in in irure aliqua est incididunt tempor duis. Exercitation occaecat dolore minim incididunt duis aute.Dolor aliqua veniam elit irure voluptate consequat proident exercitation minim id magna amet. Reprehenderit sit officia sit adipisicing quis velit incididunt irure eiusmod non proident id amet incididunt. Proident dolore laboris aliquip ut. Mollit cupidatat nisi dolor fugiat.",
                 "langs": "Go, C++",
@@ -161,6 +131,7 @@
                     "title": "Work 4"
                 },
                 "project_title": "Work 4",
+                "project_summary": "A short summary of the Project",
                 "project_description_short": "Ad tempor sunt commodo in labore ea anim nulla ullamco esse ullamco excepteur nostrud excepteur. Laboris tempor anim eiusmod ad amet quis officia mollit nulla commodo non anim. Veniam veniam sunt et irure minim nostrud laboris consectetur pariatur amet cupidatat eu consectetur. Laboris in amet mollit irure. Eiusmod veniam culpa enim officia pariatur voluptate laboris consectetur excepteur culpa ipsum dolore. Est mollit voluptate incididunt sit amet ut sint commodo non velit anim duis quis. Aliqua esse minim ad velit.",
                 "project_description_long": "Velit quis sit eiusmod cupidatat non. Esse in excepteur sunt in veniam incididunt Lorem proident tempor adipisicing adipisicing labore excepteur. Incididunt duis sunt id officia. Dolore consequat labore consectetur labore culpa ipsum mollit nulla amet et cillum in aliqua laboris.Nostrud nulla nostrud labore aute non quis enim ut officia id mollit eiusmod ut. Anim occaecat magna ullamco aute. Minim aute fugiat labore voluptate pariatur reprehenderit velit reprehenderit magna dolor fugiat laboris consequat quis. Aliqua eu nostrud amet culpa sit fugiat eu in. Reprehenderit elit amet magna amet exercitation cupidatat velit sunt.",
                 "langs": "Typescript, Perl",
@@ -280,7 +251,7 @@
         "style_sheet": "about.min.css",
         "main": {
             "image": {
-                "link": "images/grey.jpg",
+                "link": "images/computer.png",
                 "alt_text": "An image of myself"
             },
             "title": "The Pro you've been searching for",
