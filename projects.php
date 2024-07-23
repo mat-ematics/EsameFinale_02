@@ -32,7 +32,7 @@ exit; */
                 <div class="singleProject">
                     <!-- Immagine -->
                     <div class="cards <?php echo $loopCounter % 2 == 0 ? "left" : "right" ?>">
-                        <a href="../Esame/single_project.php?id=<?php echo $project['project_id'] ?>" title="<?php echo $project['image']['title'] ?>">
+                        <a href="single_project.php?id=<?php echo $project['project_id'] ?>" title="<?php echo $project['image']['title'] ?>">
                             <img src="<?php echo $project['image']['link'] ?>" alt="<?php echo $project['image']['alt_text'] ?>">
                         </a>
                     </div>
