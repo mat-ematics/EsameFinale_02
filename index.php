@@ -50,14 +50,16 @@ exit; */
                 <?php foreach ($projects as $project) { ?>
                     <?php if ($counter >= $project_limit) break; ?>
                     <!-- Singola Card progetto -->
-                    <div class="cards">
-                        <img src="<?php echo $project['image']['link'] ?>" alt="<?php echo $project['image']['alt_text'] ?>" title="<?php echo $project['image']['title'] ?>">
-                        <!-- Overlay-on-hover -->
-                        <div class="overlay">
-                            <h2><?php echo $project['project_title'] ?></h2>
-                            <p><?php echo $project['project_summary'] ?></p>
+                    <a href="single_project.php?id=<?php echo $project['project_id'] ?>">
+                        <div class="cards">
+                            <img src="<?php echo $project['image']['link'] ?>" alt="<?php echo $project['image']['alt_text'] ?>" title="<?php echo $project['image']['title'] ?>">
+                            <!-- Overlay-on-hover -->
+                            <div class="overlay">
+                                <h2><?php echo $project['project_title'] ?></h2>
+                                <p><?php echo $project['project_summary'] ?></p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                     <?php $counter++; ?>
                 <?php } ?>
             </div>
