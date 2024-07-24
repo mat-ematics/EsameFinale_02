@@ -1,28 +1,8 @@
 @use 'sass:math';
 @use 'variables' as var;
-@use 'footer' as foot;
-@use 'navbar' as nav;
-
 
 /* Projects Variabili */
 $bubbleColor: #777676;
-
-/* Stile generale di html, body e a */
-html, body {
-    width: 100%;
-    min-height: 100vh;
-    scroll-behavior: smooth;
-    min-width: fit-content;
-}
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0px;
-    margin: 0px;
-}
-a {
-    text-decoration: none;
-    color: inherit;
-}
 
 /* Stile main */
 main {

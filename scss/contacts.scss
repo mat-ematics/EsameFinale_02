@@ -1,5 +1,4 @@
 @use 'variables' as var;
-@use 'navbar' as nav;
 
 $inputBorder: 1px solid lightgray;
 $inputValidBorder: 1px solid var.$primaryBgColor;
@@ -12,22 +11,12 @@ $submitHoverColor: linear-gradient(52deg, rgba(69,98,162,1) 0%, rgba(58,86,186,1
 $sentMessageSize: 50px;
 $sentMessageColor: var.$colorPrimary;
 
-/* Stile elementi html, body e a generali */
-html, body { 
-    min-width: min-content;
-}
+/* Stile sfondo */
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100vh;
     background: var.$primaryBgColor;
     background: var.$gradientBgColor;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    margin: 0;
-}
-a {
-    text-decoration: none;
-    color: inherit
 }
 
 /* Stile corpo principale - posizionamento del form */

@@ -1,23 +1,4 @@
 @use 'variables' as var;
-@use 'navbar' as nav;
-@use 'footer' as foot;
-
-/* Stile html, body e a generali */
-html, body {
-    width: 100%;
-    scroll-behavior: smooth;
-    min-height: max-content;
-    min-width: min-content;
-}
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0px;
-    margin: 0;
-}
-a {
-    text-decoration: none;
-    color: inherit;
-}
 
 /* Stile del main */
 main {
