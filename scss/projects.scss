@@ -7,10 +7,7 @@ $bubbleColor: #777676;
 /* Stile main */
 main {
     position: relative;
-    background: linear-gradient(-45deg, rgb(57, 141, 190), #3683db, #2b95bb, #28a7ac);
-    background-color: var.$secondaryBgColor;
-    display: flex;
-    flex-direction: column;
+    
     /* Stile titolo */
     h1 {
         text-align: center;

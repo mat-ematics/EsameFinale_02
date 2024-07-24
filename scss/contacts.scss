@@ -11,20 +11,18 @@ $submitHoverColor: linear-gradient(52deg, rgba(69,98,162,1) 0%, rgba(58,86,186,1
 $sentMessageSize: 50px;
 $sentMessageColor: var.$colorPrimary;
 
-/* Stile sfondo */
+* {
+    box-sizing: content-box;
+}
+
 body{
-    background: var.$primaryBgColor;
     background: var.$gradientBgColor;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 /* Stile corpo principale - posizionamento del form */
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 div#contactsWrapper {
     width: 100%;
     display: flex;

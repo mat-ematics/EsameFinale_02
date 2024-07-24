@@ -10,11 +10,6 @@ $bubbleColors: (
     'back_end': #e33590,
 );
 
-* {
-    box-sizing: border-box;
-}
-
-
 /* Stile Animazione Sfondo */
 .bg {
     animation: slide 3s ease-in-out infinite alternate;
@@ -50,10 +45,9 @@ $bubbleColors: (
 //Stile del Main
 main {
     height: calc(100vh - var.$navHeight - var.$footHeight);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     overflow: hidden;
+    background-color: transparent;
+    background: transparent;
 }
 /* Titolo Pagina */
 div#title {

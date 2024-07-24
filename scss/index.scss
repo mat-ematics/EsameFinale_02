@@ -8,12 +8,7 @@ $buttonHoverBorder: 2px solid white;
 
 /* Stile del Main */
 main {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     height: fit-content;
-    background: linear-gradient(-45deg, rgb(57, 141, 190), #3683db, #2b95bb, #28a7ac);       
-    background-color: var.$primaryBgColor;
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     box-shadow: var.$mainBoxShadow;
