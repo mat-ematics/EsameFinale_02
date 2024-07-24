@@ -48,13 +48,12 @@ div#title {
         display: flex;
         flex-direction: column;
         margin: 0px;
-        font-family: 'Poppins';
     }
-
+    
     p {
+        font-family: var.$fontPrimary;
         font-size: 40px;
         font-weight: bold;
-        font-family: 'Poppins';
     }
 }
 /* Stili logo */
@@ -64,7 +63,7 @@ div#image {
     justify-content: center;
 
     h1#logo {
-        font-family: 'Source Code Pro';
+        font-family: var.$logoFont;
         font-weight: 500;
         color: white;
         font-size: 100px;
@@ -72,7 +71,6 @@ div#image {
 }
 /* Stile bottone di scorrimento */
 button#down {
-    margin-top: 75px;
     width: 200px;
     height: 50px;
     font-size: 18px;
@@ -149,7 +147,6 @@ h1.title {
     text-align: center;
     font-size: 80px;
     margin-top: 75px;
-    font-family: 'Poppins';
     color: var.$colorPrimary;
 }
 /* Stile card */

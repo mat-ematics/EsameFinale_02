@@ -54,7 +54,6 @@ div#title {
     h1 {
         margin: 0; 
         color: var.$colorTertiary;
-        font-family: 'Poppins';
         font-size: 90px;
     }
 }
@@ -94,7 +93,6 @@ div#columns {
             div.title {
                 h1 {
                     color: var.$colorTertiary;
-                    font-family: 'Poppins';
                     font-weight: bold;
                     word-wrap: normal;
                     text-wrap:nowrap;
@@ -120,7 +118,7 @@ div#columns {
                     white-space: pre-wrap;
                     overflow: hidden;
                     color: var.$colorTertiary;
-                    font-family: 'Poppins';
+                    font-family: var.$fontPrimary;
                     font-size: 20px;
                     font-weight: bold;
                 }

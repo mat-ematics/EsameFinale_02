@@ -49,7 +49,6 @@ div#contactsBg {
 }
 /* Titolo della pagina */
 h2#title {
-    font-family: 'Poppins';
     text-align: center;
     font-size: 40px;
     margin-top: 0px;
@@ -121,7 +120,6 @@ form#contactForm {
     textarea {
         height: 105px;
         resize: none;
-        font-family: Arial, Helvetica, sans-serif;
         overflow: auto;
         &.valid {
             border: $inputValidBorder;

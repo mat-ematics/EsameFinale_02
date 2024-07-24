@@ -11,7 +11,6 @@ main {
     /* Stile titolo */
     h1 {
         text-align: center;
-        font-family: 'Poppins';
         color: white;
         font-size: 90px;
         margin: 80px 0px;
@@ -89,7 +88,7 @@ div.descriptionTitle {
         color: white;
         border: white 4px solid;
         padding: 20px 0px;
-        font-family: 'Poppins';
+        font-family: var.$fontPrimary;
         font-weight: bold;
         font-size: 40px;
         margin: 0;
@@ -99,7 +98,6 @@ div.descriptionTitle {
 div.descriptionText {
     p {
         color: white;
-        font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         font-size: 20px;
         margin: 0;
