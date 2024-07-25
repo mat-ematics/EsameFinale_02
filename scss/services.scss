@@ -125,6 +125,7 @@ div#columns {
             }
 
             /* Stile al passaggio del mouse */
+            @media (min-width: 1024px) {
             &:hover {
                 border-bottom-left-radius: $bubbleHoverRadius;
                 border-bottom-right-radius: $bubbleHoverRadius;
@@ -144,6 +145,7 @@ div#columns {
                     bottom: 30%;
                 }
             }
+            }
             
             /* Colori Bolle */
             @each $bubble, $color in $bubbleColors {
@@ -153,12 +155,6 @@ div#columns {
             }
         }
     }
-}
-
-/* Posizionamento Footer sopra lo sfondo */
-footer {
-    position: relative;
-    z-index: 3;
 }
 
 @media (min-width: 1700px) and (min-height: 900px) {
@@ -199,13 +195,6 @@ footer {
             font-size: 15px;
             padding: 5%;
         }
-        
-        &:hover { 
-            div.title h1{
-                font-size: 50px;
-            }
-
-        }
     }
 }
 
@@ -222,12 +211,18 @@ footer {
             font-size: 12px;
             padding: 5%;
         }
-        
-        &:hover { 
-            div.title h1{
-                font-size: 50px;
-            }
+    }
+}
 
+@media screen and (max-width: 420px) {
+    div#title h1 {
+        font-size: 60px;
+    }
+    div#columns {
+        flex-direction: column;
+
+        .column {
+            width: 100%;
         }
     }
 }
