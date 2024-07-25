@@ -175,6 +175,12 @@ form#contactForm {
     border: $inputInvalidBorder !important;
 }
 
+@media screen and (max-width: 920px) {
+    div#contactsBg h1#formSentMessage {
+        font-size: 30px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     h2#title {
         font-size: 20px;
@@ -191,4 +197,9 @@ form#contactForm {
     div#contactsBg {
         padding: 10px 0;
     }  
+}
+@media screen and (max-width: 375px) {
+    div#contactsBg h1#formSentMessage {
+        font-size: 20px;
+    }
 }
