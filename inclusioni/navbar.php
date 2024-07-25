@@ -1,20 +1,22 @@
 <?php
 require_once("strumenti.php");
+
 use assets\strumenti;
+
 $header = strumenti::leggiJSON("json/data.json", true)["header"];
 ?>
 
 <header>
-<!-- Barra di navigazione -->
+    <!-- Barra di navigazione -->
     <nav>
         <ul id="navBar">
-            <li>
+            <li class="navSides">
                 <!-- Logo -->
                 <div id="navLogo">
                     <a href="<?php echo $header["logo"]['link']  ?>"><?php echo $header['logo']['image'] ?></a>
                 </div>
             </li>
-            <li id="navSections">
+            <li id="navSections" class="sections">
                 <div id="navMenu">
                     <?php foreach ($header['navbar'] as $item => $link) { ?>
                         <div class="navItems" <?php if ($item == $data['page_title']) { ?> id="<?php echo strtolower($data['page_title']) ?>" <?php } ?>>
@@ -23,6 +25,22 @@ $header = strumenti::leggiJSON("json/data.json", true)["header"];
                     <?php } ?>
                 </div>
             </li>
+            <li class="navSides">
+                <!-- Menu -->
+                <div id="menuIcon">
+                    <a href="javascript:void(0)" onclick="menu()"><i class="fa-solid fa-bars"></i></a>
+                </div>
+            </li>
         </ul>
     </nav>
 </header>
+<script>
+    function menu() {
+        let navSections = document.getElementById("navSections");
+        if (navSections.className === "sections") {
+            navSections.className += " responsive";
+        } else {
+            navSections.className = "sections";
+        }
+    }
+</script>
