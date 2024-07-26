@@ -1,7 +1,7 @@
 {
     "header" : {
         "logo" : { 
-            "image" : "C.devs",
+            "image" : "Matt.devs",
             "link" : "index.php"
             },
         "navbar" : {
@@ -49,11 +49,11 @@
         "style_sheet": "index.min.css",
         "main" : {
             "title": [
-                "I'm Cringy,",
-                "a Coder"
+                "I'm Matt",
+                "a Hard Worker"
             ],
             "subtitle": [
-                "Professional keyboard head-smasher"
+                "Certified Full Stack Developer"
             ],
             "logo": {
                 "image": "C.devs",
@@ -254,8 +254,8 @@
                 "link": "images/computer.png",
                 "alt_text": "An image of myself"
             },
-            "title": "The Pro you've been searching for",
-            "subtitle": "Astonishing Websites designed just for you, by a Code Academy certified Fullstack Developer"
+            "title": "Astonishing Websites tailored for You",
+            "subtitle": "The Pro you've been searching for, Code Academy certified Fullstack Developer"
         },
         "lang_cards": {
             "icon_style": "fa-5x",
