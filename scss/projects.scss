@@ -2,7 +2,7 @@
 @use 'variables' as var;
 
 /* Projects Variabili */
-$bubbleColor: #777676;
+$bubbleColor: #2f00ff80;
 
 /* Stile main */
 main {
@@ -11,7 +11,7 @@ main {
     /* Stile titolo */
     h1 {
         text-align: center;
-        color: white;
+        color: var.$colorTertiary;
         font-size: 90px;
         margin: 80px 0px;
         height: 20%;
@@ -31,7 +31,7 @@ main {
 /* Stile bolle */
 .bubble {
     position: absolute;
-    background: #2f00ff80;
+    background: $bubbleColor;
     border-radius: 50%;
     animation: float 5s infinite ease-in;
     /* Animazione delle bolle */
@@ -84,10 +84,11 @@ div.projectDescription {
 div.descriptionTitle {
     margin: 0px auto;
     width: 50%;
+    min-width: fit-content;
     p {
         color: white;
         border: white 4px solid;
-        padding: 20px 0px;
+        padding: 20px 10px;
         font-family: var.$fontPrimary;
         font-weight: bold;
         font-size: 40px;
@@ -145,6 +146,10 @@ div.right {
     div.projectDescription {
         order: 2;
         width: 80%
+    }
+
+    div.descriptionText p {
+        margin-top: 20px;
     }
 }
 

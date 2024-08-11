@@ -106,12 +106,9 @@ div#menuIcon {
 }
 
 @media screen and (max-width: 768px) {
-    div#navMenu {
-        visibility: hidden; /* Hide navigation menu by default */
-    }
+
     div#menuIcon {
         visibility: visible; /* Show menu icon */
-        display: block;
     }
     li#navSections {
         position: absolute;
@@ -119,6 +116,10 @@ div#menuIcon {
         left: 0;
         background-color: var.$navBgColor;
         width: 100%;
+
+        #navMenu {
+            display: none;
+        }
 
         &.responsive #navMenu {
             display: flex;
