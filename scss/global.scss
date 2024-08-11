@@ -107,10 +107,11 @@ div#menuIcon {
 
 @media screen and (max-width: 768px) {
     div#navMenu {
-        display: none; /* Hide navigation menu by default */
+        visibility: hidden; /* Hide navigation menu by default */
     }
     div#menuIcon {
-        display: block; /* Show menu icon */
+        visibility: visible; /* Show menu icon */
+        display: block;
     }
     li#navSections {
         position: absolute;
