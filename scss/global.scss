@@ -97,7 +97,7 @@ div#navLogo a {
 }
 
 div#menuIcon {
-    display: none; /* Nascondi l'icona del Menu Hamburger */
+    visibility: hidden; /* Nascondi l'icona del Menu Hamburger */
     color: var.$textColor;
     width: 100px;
     margin: 0px 5px;
