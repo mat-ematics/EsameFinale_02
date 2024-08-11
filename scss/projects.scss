@@ -151,6 +151,15 @@ div.right {
     div.descriptionText p {
         margin-top: 20px;
     }
+
+    div.left, div.right {
+        transform: scale(0.8) translateY(15px);
+
+        &:hover {
+            transform: scale(1) translateY(0px);
+        }
+    }
+
 }
 
 @media screen and (max-width: 770px) {
