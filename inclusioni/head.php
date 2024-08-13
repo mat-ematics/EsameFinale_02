@@ -22,9 +22,9 @@ use assets\strumenti;
     <!-- Meta Tag -->
     <meta name="keywords" content="Cringe.devs, C.devs, c.devs, cringe.devs, Matt.devs, M.devs, m.devs, matt.devs">
     <!-- Descrizione del Sito -->
-    <meta name="description" content="Portfolio di Matteo - <?php echo $data['page_title'] ?>">
+    <meta name="description" content="Matt's Portfolio - <?php echo $data['page_title'] ?>">
     <!-- Autore del Sito -->
-    <meta name="author" content="Matteo">
+    <meta name="author" content="Matt">
 
     <style>
         div#<?php echo strtolower($data['page_title']) ?> {
