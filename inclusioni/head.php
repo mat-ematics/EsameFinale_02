@@ -20,7 +20,7 @@ use assets\strumenti;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <!-- Meta Tag -->
-    <meta name="keywords" content="Cringe.devs, C.devs, c.devs, cringe.devs">
+    <meta name="keywords" content="Cringe.devs, C.devs, c.devs, cringe.devs, Matt.devs, M.devs, m.devs, matt.devs">
     <!-- Descrizione del Sito -->
     <meta name="description" content="Portfolio di Matteo - <?php echo $data['page_title'] ?>">
     <!-- Autore del Sito -->
