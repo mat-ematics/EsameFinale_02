@@ -172,8 +172,10 @@ div.icon {
     text-align: center;
     width: 20%;
     align-items: center;
+
     i {
         color: var.$colorPrimary;
+        font-size: 7em;
     }
     /* Stile sottotitoli icone */
     p {
@@ -203,9 +205,63 @@ div.icon {
     }
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 600px) {
     div#image img {
         height: 350px;
         width: 350px;
+    }
+
+    div#title {
+        h1 {
+            font-size: 30px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+
+    div#indepthMe {
+        h1 {
+            font-size: 25px;
+        }
+    }
+
+    div.icon {
+        i {
+            font-size: 3em;
+        }
+
+        p {
+            font-size: 15px;
+        }
+    }
+
+    div.hexagon {
+        width: calc($langCircleDiameter / 2);
+        height: calc($langCircleDiameter / 2);
+        p.hexText {
+            font-size: 10px;
+        }
+        i {
+            font-size: 3em;
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    div#image {
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 300px) {
+    div#image {
+        img {
+            width: 150px;
+            height: 150px;
+        }
     }
 }

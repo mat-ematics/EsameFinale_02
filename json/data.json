@@ -252,7 +252,7 @@
         "main": {
             "image": {
                 "link": "images/computer.png",
-                "alt_text": "An image of myself"
+                "alt_text": "My great Coding Capabilities"
             },
             "title": "Astonishing Websites tailored for You",
             "subtitle": "The Pro you've been searching for, Code Academy certified Fullstack Developer"
@@ -301,8 +301,6 @@
         },
         "indepth": {
             "title": "My Projects are Powered with:",
-            "icon_style": "fa-7x",
-            "icon_color": "#3683db",
             "icons": {
                 "speed": {
                     "icon": "fa-gauge-high",
